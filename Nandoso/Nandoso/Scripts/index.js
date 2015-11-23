@@ -29,7 +29,7 @@ function setupSpecialsTable(specialsList) {
         descriptionCol.innerHTML = specialsList[i].SpecialDescription;
         row.appendChild(descriptionCol);
 
-        studentTable.appendChild(row);
+        specialsTable.appendChild(row);
     }
 
     //SpecialsModule.getSpecials(function (specialsList) {
