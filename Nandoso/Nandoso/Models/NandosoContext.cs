@@ -7,7 +7,7 @@ using System.Data.Entity.Migrations;
 
 namespace Nandoso.Models
 {
-    //DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
+    [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
     public class NandosoContext : DbContext
     {
         // You can add custom code to this file. Changes will not be overwritten.
