@@ -1,0 +1,17 @@
+﻿body {
+}
+
+/*
+    select all the th elements inside the table head and spaces them out
+*/
+.spaced-table>thead>tr>th{
+    padding:20px 20px;
+}
+
+/*
+    select al the th elements inside the table body and spaces them out
+*/
+.spaced-table>tbody>tr>td{
+    padding: 40px 20px;
+    vertical-align:middle;
+}

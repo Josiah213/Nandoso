@@ -13,7 +13,7 @@ namespace Nandoso.Models
         public string SpecialName { get; set; }
         public string SpecialPrice { get; set; }
         public string SpecialDescription { get; set; }
-        public byte[] picture { get; set; }
+        //public byte[] picture { get; set; }
 
     }
 }

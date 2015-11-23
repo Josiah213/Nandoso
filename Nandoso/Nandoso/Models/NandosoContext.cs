@@ -25,12 +25,11 @@ namespace Nandoso.Models
 
                 this.AutomaticMigrationDataLossAllowed = true;
             }
-        }
 
-        //seed database with specials menu items
-       void Seed(NandosoContext context)
-        {
-            var special = new List<Specials>
+            //seed database with specials menu items
+            protected override void Seed(NandosoContext context)
+            {
+                var special = new List<Specials>
             {
                 new Specials { SpecialName = "Quarter Chicken", SpecialPrice = "$8.90",
                     SpecialDescription = "Small fraction, big reaction." },
@@ -55,9 +54,12 @@ namespace Nandoso.Models
                 new Specials { SpecialName = "Double Breast Burger", SpecialPrice = "$15.90",
                     SpecialDescription = "Two marinated & basted skinless chicken breasts, accompanied by crisp lettuce, tomato & our special light mayo inside a soft, seeded bun." }
             };
-            special.ForEach(s => context.Specials.AddOrUpdate(p => p.SpecialName, s));
-            context.SaveChanges();
+                special.ForEach(s => context.Specials.AddOrUpdate(p => p.SpecialName, s));
+                context.SaveChanges();
+            }
         }
+
+        
 
 
         public NandosoContext() : base("name=NandosoContext")
