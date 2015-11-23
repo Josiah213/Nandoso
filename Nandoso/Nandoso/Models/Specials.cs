@@ -12,6 +12,7 @@ namespace Nandoso.Models
         public int ID { get; set; }
         public string SpecialName { get; set; }
         public string SpecialPrice { get; set; }
+        public string SpecialDescription { get; set; }
         public byte[] picture { get; set; }
 
     }
