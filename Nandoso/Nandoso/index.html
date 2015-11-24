@@ -4,6 +4,7 @@
     <title>Specials</title>
     <script src="Scripts/jquery-1.9.1.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/facebooklogin.js"></script>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/style.css" rel="stylesheet" />
     <script src="Scripts/index.js"></script>
@@ -20,6 +21,10 @@
             </div>
         </nav>
     </header>
+
+    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+    <div id="status"></div>
+
     <table class="table table-striped">
         <thead>
             <tr>

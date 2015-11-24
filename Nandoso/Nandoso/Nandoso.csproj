@@ -167,6 +167,7 @@
     <None Include="Properties\PublishProfiles\NandosoJosiahM - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="index.html" />
+    <Content Include="Scripts\facebooklogin.js" />
     <Content Include="Scripts\index.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
