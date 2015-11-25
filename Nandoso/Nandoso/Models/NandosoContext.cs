@@ -56,6 +56,16 @@ namespace Nandoso.Models
             };
                 specials.ForEach(s => context.Specials.AddOrUpdate(p => p.SpecialName, s));
                 context.SaveChanges();
+
+                var feedbacks = new List<Feedbacks>
+                {
+                    new Feedbacks { CommentorName = "Tony",
+                        Comment = "Can't get enough of those BBQ ribs, too good =P"},
+                    new Feedbacks { CommentorName = "Jack - Nandoso Team",
+                        Comment = "Thanks for your feedback! I love the ribs too"}
+                };
+                feedbacks.ForEach(s => context.Feedbacks.AddOrUpdate(p => p.CommentorName, s));
+                context.SaveChanges();
             }
         }
 
@@ -68,5 +78,7 @@ namespace Nandoso.Models
         }
 
         public System.Data.Entity.DbSet<Nandoso.Models.Specials> Specials { get; set; }
+
+        public System.Data.Entity.DbSet<Nandoso.Models.Feedbacks> Feedbacks { get; set; }
     }
 }

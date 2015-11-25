@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 
 namespace Nandoso.Models
 {
-    public class Feedback
+    public class Feedbacks
     {
         public int ID { get; set; }
         public string CommentorName { get; set; }

@@ -2,10 +2,15 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("DOM loaded and ready to go!");
     loadSpecials();
+    loadFeedbacks();
 });
 
 function loadSpecials() {
     SpecialsModule.getSpecials(setupSpecialsTable);
+}
+
+function loadFeedbacks() {
+    FeedbacksModule.getFeedbacks(setupFeedbacksTable);
 }
 
 function setupSpecialsTable(specialsList) {
@@ -32,9 +37,22 @@ function setupSpecialsTable(specialsList) {
         specialsTable.appendChild(row);
     }
 
-    //SpecialsModule.getSpecials(function (specialsList) {
-    //    setupSpecialsTable(specialsList);
-    //});
+}
 
+function setupFeedbacksTable(feedbacksList) {
+
+    // We need a reference to the div/table that we are going to chuck our data into
+    var feedbacksTable = document.getElementById("feedbacksList");
+    console.log(feedbacksList);
+
+    for (i = 0; i < feedbacksList.length; i++) {
+        var usernameRow = document.createElement("tr")
+        usernameRow.innerHTML = feedbacksList[i].CommentorName;
+        feedbacksTable.appendChild(usernameRow);
+
+        var commentRow = document.createElement("tr")
+        commentRow.innerHTML = feedbacksList[i].Comment;
+        feedbacksTable.appendChild(commentRow);
+    }
 
 }

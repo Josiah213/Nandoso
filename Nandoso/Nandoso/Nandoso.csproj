@@ -196,6 +196,7 @@
     <Content Include="index.html" />
     <Content Include="Scripts\facebooklogin.js" />
     <Content Include="Scripts\fakeLoader.js" />
+    <Content Include="Scripts\FeedbacksModule.js" />
     <Content Include="Scripts\index.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -211,11 +212,12 @@
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="ChatHub.cs" />
+    <Compile Include="Controllers\FeedbacksController.cs" />
     <Compile Include="Controllers\SpecialsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Feedback.cs" />
+    <Compile Include="Models\Feedbacks.cs" />
     <Compile Include="Models\NandosoContext.cs" />
     <Compile Include="Models\Specials.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
