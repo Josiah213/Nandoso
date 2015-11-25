@@ -1,8 +1,15 @@
 ﻿body {
-    padding:20px 20px;
+    padding:20px 120px;
     vertical-align:middle;
 }
 
+.container-fluid{
+    background-color:#991F00;
+}
+
+.navbar-inverse{
+    color:#801900;
+}
 /*
     select all the th elements inside the table head and spaces them out
 */
