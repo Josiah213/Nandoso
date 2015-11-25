@@ -28,19 +28,28 @@
             </div>
         </nav>
     </header>
-    <p>
-        We welcome all forms of feedback on our food and service so that we may improve<br />
-        and leave you satisfied.<br />
-        Just pop a comment down below and someone in our Nandoso team will reply to your<br />
-        feedback.
-    </p>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Feedback</th>
-            </tr>
-        </thead>
-        <tbody id="feedbacksList"></tbody>
-    </table>
+    <div >
+        <p>
+            We welcome all forms of feedback on our food and service so that we may improve<br />
+            and leave you more satisfied.<br />
+            Just pop a comment down below and someone in our Nandoso team will reply to your<br />
+            feedback.
+        </p>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Feedback</th>
+                </tr>
+            </thead>
+            <tbody id="feedbacksList"></tbody>
+        </table>
+        <p>Your name</p>
+        <textarea rows="1" cols="100"></textarea>    <!-- textbox for customers/employees to put their name in -->
+        <p>Your message (max 10000 characters)</p>
+        <textarea rows="10" cols="100" maxlength="10000"></textarea>
+        <br />                                       <!-- textbox for comment -->
+        <button type="button">Submit</button>        <!--button which will append the name and comment to database for feedback-->
+    </div>
+   
 </body>
 </html>
