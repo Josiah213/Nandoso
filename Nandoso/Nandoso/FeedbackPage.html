@@ -21,11 +21,20 @@
     </style>
 </head>
 <body>
+    <div id="fb-root"></div>
+    <script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1086364881373770";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     <header>
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Feedback and Comments: Yay or Nay</a>
+                    <a class="navbar-brand" href="#">Nandoso - Feedback and Comments</a>
                     <button onclick="window.location='/index.html'">Home</button>
                     <button onclick="window.location='/SpecialPage.html'">Specials</button>
                     <button onclick="window.location='/FeedbackPage.html'">Feedback</button>  
@@ -34,6 +43,7 @@
             </div>
         </nav>
     </header>
+    <!--
     <div >
         <p>
             We welcome all forms of feedback on our food and service so that we may improve<br />
@@ -50,12 +60,54 @@
             <tbody id="feedbacksList"></tbody>
         </table>
         <p>Your name</p>
-        <textarea rows="1" cols="100"></textarea>    <!-- textbox for customers/employees to put their name in -->
+        <textarea rows="1" cols="100"></textarea>    <!-- textbox for customers/employees to put their name in 
         <p>Your message (max 10000 characters)</p>
         <textarea rows="10" cols="100" maxlength="10000"></textarea>
-        <br />                                       <!-- textbox for comment -->
-        <button type="button">Submit</button>        <!--button which will append the name and comment to database for feedback-->
+        <br />                                       <!-- textbox for comment 
+        <button type="button">Submit</button>        <!--button which will append the name and comment to database for feedback
+    </div>-->
+
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-10">
+                    <hr>
+                    <!--
+                    <h2 class="intro-text text-center">
+                        <strong>Post some feedback!</strong>
+                    </h2>-->
+                    <p>
+                        We welcome all forms of feedback on our food and service so that we may improve<br />
+                        and leave you more satisfied.<br />
+                        Just pop a comment down below and someone in our Nandoso team will reply to your<br />
+                        feedback.
+                    </p>
+                    <hr>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Feedback</th>
+                            </tr>
+                        </thead>
+                        <tbody id="feedbacksList"></tbody>
+                        
+                    </table>
+                    <div class="fb-comments" data-href="https://nandosojosiahm.azurewebsites.net/FeedbackPage.html" data-numposts="5"></div>
+                    <form role="form">
+                        <div class="row">                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
     </div>
+    <!-- /.container -->
+
+    <div class="container" id="feedbackContainer">
+    </div>
+    <!-- /.container -->
+    <footer id="bottom"></footer>
    
 </body>
 </html>
