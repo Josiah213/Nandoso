@@ -23,7 +23,6 @@ C:\Users\Josiah\Documents\GitHubVisualStudio\Nandoso\Nandoso\Nandoso\bin\Newtons
 C:\Users\Josiah\Documents\GitHubVisualStudio\Nandoso\Nandoso\Nandoso\bin\System.Net.Http.Formatting.xml
 C:\Users\Josiah\Documents\GitHubVisualStudio\Nandoso\Nandoso\Nandoso\bin\System.Web.Http.xml
 C:\Users\Josiah\Documents\GitHubVisualStudio\Nandoso\Nandoso\Nandoso\bin\System.Web.Http.WebHost.xml
-C:\Users\Josiah\Documents\GitHubVisualStudio\Nandoso\Nandoso\Nandoso\obj\Debug\Nandoso.csprojResolveAssemblyReference.cache
 C:\Users\Josiah\Documents\GitHubVisualStudio\Nandoso\Nandoso\Nandoso\obj\Debug\Nandoso.dll
 C:\Users\Josiah\Documents\GitHubVisualStudio\Nandoso\Nandoso\Nandoso\obj\Debug\Nandoso.pdb
 C:\Users\Josiah\Documents\GitHubVisualStudio\Nandoso\Nandoso\Nandoso\bin\EntityFramework.dll
