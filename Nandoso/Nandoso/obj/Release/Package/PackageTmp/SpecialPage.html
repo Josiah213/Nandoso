@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Specials</title>
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/facebooklogin.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/style.css" rel="stylesheet" />
+    <!-- Include the fakeLoader.css
+    <link rel="stylesheet" type="text/css" href="css/fakeLoader.css">    -->
+    <script src="Scripts/index.js"></script>
+    <script src="Scripts/SpecialsModule.js"></script>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <!--
+    <div id="fakeLoader"></div>
+    <!-- Include jQuery
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Using fakeLoader
+    <script>
+    $("#fakeLoader").fakeLoader({
+            timeToHide: 3000,
+            zIndex: 999,
+            spinner: "spinner2",
+            bgColor: "#008b00"
+
+        });
+    </script>
+    -->
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Nandoso Menu: Chicken Specials</a>
+                    <button onclick="window.location='/index.html'">Home</button>
+                    <button onclick="window.location='/SpecialPage.html'">Specials</button>
+                    <button onclick="window.location='/FeedbackPage.html'">Feedback</button>  
+                    <button onclick="window.location='/DiscussionPage.html'">Chat Discussion</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+    <div id="status"></div>
+
+    <table class="table table-striped spaced-table">
+        <thead>
+            <tr>
+                <th>Special</th>
+                <th>Price</th>
+                <th>Description</th>
+
+            </tr>
+        </thead>
+        <tbody id="specialsList"></tbody>
+    </table>
+</body>
+</html>
