@@ -116,3 +116,4 @@ C:\Users\Josiah\Documents\GitHubVisualStudio\Nandoso\Nandoso\Nandoso\bin\Microso
 C:\Users\Josiah\Documents\GitHubVisualStudio\Nandoso\Nandoso\Nandoso\bin\SendGrid.dll
 C:\Users\Josiah\Documents\GitHubVisualStudio\Nandoso\Nandoso\Nandoso\bin\SendGrid.SmtpApi.dll
 C:\Users\Josiah\Documents\GitHubVisualStudio\Nandoso\Nandoso\Nandoso\bin\SendGridMail.dll
+C:\Users\Josiah\Documents\GitHubVisualStudio\Nandoso\Nandoso\Nandoso\obj\Debug\Nandoso.csprojResolveAssemblyReference.cache

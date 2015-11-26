@@ -7,7 +7,7 @@
             $.ajax({
                 type: "GET",
                 dataType: "json",
-                url: "https://nandosojosiahm.azurewebsites.net/api/Specials",
+                url: "https://nandosojosiahm.azurewebsites.net/api/specials",
                 success: function (data) {
                     console.log(data);
                     callback(data);
